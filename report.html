@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2025 sales report</title><style>
+:root{--bg:#fbfaf8;--fg:#1f2430;--muted:#5d6676;--card:#fff;--line:#e3e0da;--accent:#1f5c99;--accent2:#c2693a;--good:#2f7d4f}
+@media (prefers-color-scheme:dark){:root{--bg:#14171d;--fg:#e8e8e6;--muted:#a3a9b5;--card:#1c2028;--line:#2d333d;--accent:#6aa8e6;--accent2:#e79a6e;--good:#6cc08c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--accent)}h1{font-size:1.9rem;margin:.2em 0}h2{font-size:1.3rem;margin-top:1.8em}
+.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.kpi b{display:block;font-size:1.6rem}.tag{display:inline-block;font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:1px 10px;margin-right:6px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}th{color:var(--muted);font-weight:600}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--accent2);padding-left:10px;margin:16px 0}
+nav a{margin-right:14px}select{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg)}
+.bad{color:var(--accent2)}.ok{color:var(--good)}
+</style></head><body><div class="wrap"><nav><a href="index.html">&larr; Portfolio</a></nav>
+<h1>2025 sales performance: short analysis report</h1>
+<p class="muted">Problem solved: the owner needs to know where revenue comes from and where to focus next year.</p>
+<p class="note">All data on this page is <b>fictional</b>, generated for demonstration. It does not come from any employer or client.</p>
+<h2>Summary</h2>
+<p>The five branches generated <b>RWF 57.9M</b> in 2025 at a gross margin of <b>28.2%</b>. Kigali Central contributed the most revenue (28%). Groceries is the largest category (45% of revenue). Sales peaked in June and were lowest in November, then rebounded in December.</p>
+<h2>Findings</h2>
+<p><b>1. Branch performance differs mainly in volume.</b> Margins are similar across branches (roughly 28-29%), so the gap between branches comes from how much each one sells rather than how profitably.</p>
+<div class="card"><table><tr><th>Branch</th><th>Revenue (RWF)</th><th>Share</th><th>Gross margin</th></tr><tr><td>Kigali Central</td><td>16.2M</td><td>28%</td><td>28.4%</td></tr><tr><td>Remera</td><td>13.0M</td><td>23%</td><td>28.9%</td></tr><tr><td>Nyamirambo</td><td>12.1M</td><td>21%</td><td>27.7%</td></tr><tr><td>Huye</td><td>8.8M</td><td>15%</td><td>27.8%</td></tr><tr><td>Musanze</td><td>7.7M</td><td>13%</td><td>27.9%</td></tr></table></div>
+<p><b>2. Seasonality matters.</b> Revenue climbed from 4.2M in January to 5.5M in June, fell to 4.1M in November, and December was 23% above November.</p>
+<p><b>3. Category mix is concentrated.</b> Groceries and Household together account for 70% of revenue, so stock availability in those two categories has the largest effect on results.</p>
+<h2>Suggested next steps</h2>
+<p>Review stock and staffing for the weaker months, test promotions for the lowest-revenue branches, and track margin by product within Groceries to confirm which items drive profit.</p>
+<h2>Method and limits</h2>
+<p>Monthly totals by branch and category (240 records), summed with Python. Gross margin = (revenue - cost) / revenue. The data is fictional and monthly, so this report cannot show product-level or customer-level patterns, and it does not test whether differences are statistically significant.</p>
+<p class="muted">Data: <a href="data/sales_fictional.csv">sales CSV</a> &middot; <a href="dashboard.html">interactive dashboard</a></p></div></body></html>

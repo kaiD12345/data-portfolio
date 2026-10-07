@@ -1,0 +1,21 @@
+{
+  "rows_in": 312,
+  "duplicates_removed": 12,
+  "gender_missing": 18,
+  "attends_school_missing": 15,
+  "dates_unparsed": 0,
+  "age_out_of_range_set_missing": 4,
+  "age_text_values_repaired_or_missing": 2,
+  "score_non_numeric_set_missing": 2,
+  "score_out_of_range_set_missing": 7,
+  "rows_out": 300,
+  "missing_after_cleaning": {
+    "respondent_id": 0,
+    "district": 0,
+    "gender": 18,
+    "age": 16,
+    "survey_date": 0,
+    "attends_school": 15,
+    "test_score": 9
+  }
+}
